@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="fragmento.cursoandroid.com.divulgaae1.CadastroActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/minilogo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="EMAIL"
+        android:id="@+id/textPerfilEmail"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignLeft="@+id/imageView2"
+        android:layout_alignStart="@+id/imageView2"
+        android:layout_marginTop="31dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editLoginEmail"
+        android:layout_below="@+id/textPerfilEmail"
+        android:layout_alignLeft="@+id/textPerfilEmail"
+        android:layout_alignStart="@+id/textPerfilEmail"
+        android:layout_alignRight="@+id/imageView2"
+        android:layout_alignEnd="@+id/imageView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="SENHA"
+        android:id="@+id/textPerfilId"
+        android:layout_below="@+id/editLoginEmail"
+        android:layout_alignLeft="@+id/editLoginEmail"
+        android:layout_alignStart="@+id/editLoginEmail"
+        android:layout_marginTop="35dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editResetEmail"
+        android:layout_below="@+id/textPerfilId"
+        android:layout_alignLeft="@+id/textPerfilId"
+        android:layout_alignStart="@+id/textPerfilId"
+        android:layout_alignRight="@+id/editLoginEmail"
+        android:layout_alignEnd="@+id/editLoginEmail" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGISTRAR"
+        android:id="@+id/btnResetSenha"
+        android:layout_marginTop="47dp"
+        android:layout_below="@+id/editResetEmail"
+        android:layout_alignLeft="@+id/editResetEmail"
+        android:layout_alignStart="@+id/editResetEmail"
+        android:layout_alignRight="@+id/editResetEmail"
+        android:layout_alignEnd="@+id/editResetEmail" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VOLTAR"
+        android:id="@+id/btnCadastroVoltar"
+        android:layout_below="@+id/btnResetSenha"
+        android:layout_alignLeft="@+id/btnResetSenha"
+        android:layout_alignStart="@+id/btnResetSenha"
+        android:layout_marginTop="23dp"
+        android:layout_alignRight="@+id/btnResetSenha"
+        android:layout_alignEnd="@+id/btnResetSenha" />
+</RelativeLayout>
